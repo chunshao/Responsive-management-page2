@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>booystrap实战项目</title>
+     <link rel="stylesheet" href="css/index.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.maizi.css"/>
+    
+
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default " >
+    <div class="container">
+        <!--小屏幕导航按钮-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="images/logo.jpg" class="img-circle" alt=""/>Maizi Admin</a>
+        </div>
+        <!--小屏幕导航按钮-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+                <li ><a href="index.html"><span class="glyphicon glyphicon-home nav_icon"></span>后台首页</a></li>
+                <li ><a href="user_list.html"><span class="glyphicon glyphicon-user nav_icon"></span>用户管理</a></li>
+                <li class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt nav_icon"></span>内容管理</a></li>
+                <li ><a href="tag.html"><span class="glyphicon glyphicon-tags nav_icon"></span>标签管理</a></li>
+               
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  admin
+                 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+                  <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                  <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+                  <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+                  <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+
+                </ul>
+              </li>
+                
+                <li ><a href="#bbs"><span class="glyphicon glyphicon-off nav_icon"></span>退出</a></li>   
+            </ul>
+        </div>
+        <!--导航-->
+    </div>
+</nav>
+<!--导航-->
+ <div class="container">
+     <div class="row">
+         <div class="col-md-2">
+             <div class="list-group">
+                 <a href="content.html" class="list-group-item active">内容管理</a>
+                 <a href="content_post.html" class="list-group-item">添加内容</a>
+                
+             </div>
+         </div>
+         <div class="col-md-10">
+            <div class="page-header"> 
+               <h1>内容管理</h1>
+            </div> 
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="content.html">内容管理</a>
+                </li>
+                <li >
+                    <a href="content_post.html">添加内容</a>
+                </li>
+                
+            </ul>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>文章标题</th>
+                        <th>作者</th>
+                        <th>发布时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">领先的 Web 技术教程 - 全部免费</th>
+                        <td>卓大哥</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th scope="row">18年老网管谈网络设备网络管理搞清3点万事无忧</th>
+                        <td>牛二哥</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">历数十大成功IT运维管理建设关键点</th>
+                        <td>hhdASS</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">UI设计师必知的4招，让HR秒藏你的简历</th>
+                        <td>小染-柒柒</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">网络运营|用户运营的一些事儿</th>
+                        <td>牛哥</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th scope="row">职场 | 瞎忙族与高效人士的13个不同点</th>
+                        <td>zchunshao</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Linux 爱好者该向闭源软件敞开怀抱了</th>
+                        <td>Justin Per</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th scope="row">职场 | 有一种挨骂叫成长</th>
+                        <td>Tracy</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th scope="row">专业Web设计师应该避免的6个关键错误</th>
+                        <td>Pandy</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10张图告诉你Leader和Boss的区别</th>
+                        <td>Nodey</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">网络运营|关于微信运营你不懂的事儿</th>
+                        <td>hare</td>
+                        <td>2016/8/4</td>
+                        <td> 
+                          <div role="presentation" class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                              操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">编辑</a></li>
+                              <li><a href="#">删除</a></li>
+                              <li><a href="#">全局置顶</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav class="pull-center">
+              <ul class="pagination">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li><a href="">7</a></li>
+                <li><a href="">8</a></li>
+                <li ><a href="#" ><span aria-hidden="true">&raquo;</span></a></li>
+                
+              </ul>
+            </nav>
+
+         </div>
+     </div>
+ </div>
+
+
+<!--footer-->
+<footer class="footer-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;www.maiziedu.com&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
